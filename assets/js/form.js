@@ -1,7 +1,5 @@
 (function() {
 	var formFunctionality = (function () {
-	    
-	  // Keep this variable private inside this closure scope
 	  
 	  var email = function() {
 		$('.email').blur(function() {
@@ -15,10 +13,6 @@
 		    }
 		});
 	  };
-
-
-	  // Explicitly reveal public pointers to the private functions 
-	  // that we want to reveal publicly
 
 	  return {
 	    init: email
