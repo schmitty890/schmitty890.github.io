@@ -1,0 +1,42 @@
+.row {
+	font-family: 'Mina', sans-serif;
+	font-weight: bolder;
+}
+#dialog {
+	border: 1px solid black;
+	font-size: 24px;
+}
+#word {
+	text-align: center;
+	font-size: 30px;
+}
+.hangman-main {
+	height: 250px;
+}
+.lose {
+  border: 5px solid red;
+  width: 50%;
+  position: relative;
+  top: -150px;
+  left: 150px;
+  background: red;
+  color: #fff;
+}
+.winner {
+  border: 5px solid green;
+  width: 50%;
+  position: relative;
+  top: -150px;
+  left: 150px;
+  background: green;
+  color: #fff;	
+}
+#hint-pic {
+	height: 100px;
+}
+
+@media(max-width: 991px) {
+	.hangman-main {
+		height: 550px;
+	}
+}

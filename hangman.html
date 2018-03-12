@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Hangman</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/hangman.css">
+    <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="page-header">
+                            <h1 class="text-center">Hangman</h1>
+                        </div>
+                        <div>Welcome to the Hangman Game. There are <span id="category-num"></span> categories with over a total of <span id="question-num"></span> questions!</div>
+                        <div class="row text-center hangman-main">
+                            <div class="col-md-6">
+                                <div><img id="hangman-image" src="assets/images/Hangman-0.png" alt=""></div>
+                                <div id="win-lose-indicator"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id="dialog">category: <span id="category"></span>. There are <span id="hint-number">0</span> hints for this word!
+                                </div>
+                                <div><img id="hint-pic" src=""></div>
+                                <div id="word"></div>
+                                <div>Press any key to guess</div>
+                                <button type="button" id="hint" class="btn btn-primary">Get A Hint</button>
+                                <button type="button" id="pic" class="btn btn-primary">Get A Pic</button>
+                                <div>
+                                    <p>(you have multiple hints if you need them!)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div>Stats</div>
+                        <div id="game-stats"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/games.js"></script>
+</body>
+
+</html>
