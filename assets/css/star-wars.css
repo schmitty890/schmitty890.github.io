@@ -1,0 +1,40 @@
+body {
+	font-family: 'Orbitron', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+.character {
+	height: 140px;
+	width: 140px;
+	border: 3px solid green;
+	padding: 10px;
+	font-size: 12px;
+	display: inline-block;
+	text-align: center;
+	background-color: #fff;
+}
+#attacker {
+	background-color: black;
+	color: white;
+}
+#defender {
+	background-color: red;
+	color: white;
+}
+.container {
+	background-image: url("../images/x-wing.jpg");
+	background-size: 125%;
+}
+#user-selected-character-section {
+	height: 175px;
+}
+#enemy-section .character {
+	background-color: red;
+	border: 3px solid black;
+}
+#defender-section .character {
+	background-color: black;
+	border: 3px solid green;
+	color: #fff;
+}
