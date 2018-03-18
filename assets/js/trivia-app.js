@@ -15,6 +15,7 @@ let $itemArea = $('.item-area');
 let totallyTrivialTrivia = {
     count: 0,
     time: 31,
+    totalTimeTaken: 0,
     numberOfQuestions: function() {
         return totallyTrivialTrivia.items.length;
     },
@@ -313,10 +314,12 @@ let totallyTrivialTrivia = {
         }
     },
     /**
-     * [timer set up the timer to decrement from 60 seconds]
+     * [timer set up the timer to decrement from 60 seconds
+     * also increment total time taken to show in the results area]
      */
     timer: function() {
         totallyTrivialTrivia.time--;
+        totallyTrivialTrivia.totalTimeTaken++;
         let currentTime = totallyTrivialTrivia.timeConverter(totallyTrivialTrivia.time);
         if (currentTime === '00:00') {
             totallyTrivialTrivia.outOfTime();
@@ -356,8 +359,10 @@ let totallyTrivialTrivia = {
      * [displayResults add the final accumulated results to the page]
      */
     displayResults: function() {
+        let totalTime = totallyTrivialTrivia.timeConverter(totallyTrivialTrivia.totalTimeTaken);
         let html = `
             <div>All done, heres how you did!</div>
+            <div>Total Time Taken: ` + totalTime + `</div>
             <div>Correct Answers: ` + correct + `</div>
             <div>Incorrect Answers: ` + incorrect + `</div>
             <div>Unanswered: ` + unanswered + `</div>
@@ -373,6 +378,7 @@ let totallyTrivialTrivia = {
         correct = 0;
         incorrect = 0;
         unanswered = 0;
+        totallyTrivialTrivia.totalTimeTaken = 0;
     },
     /**
      * [eventHandlers add event handlers to elements on the page]
