@@ -1,0 +1,78 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-image: url('../images/background.jpg');
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+}
+
+.trivia {
+    height: 700px;
+}
+
+.container {
+    background-color: #F5E840;
+    background-size: 125%;
+}
+
+.title {
+    color: #1972B5;
+    font-size: 56px;
+}
+
+button {
+    border: 2px solid #1972B5;
+    background-color: #F6CDE0;
+    width: 50%;
+    color: black;
+    font-size: 36px;
+    padding: 10px;
+}
+
+#results {
+    font-size: 28px;
+}
+
+#time {
+    display: inline;
+}
+
+.time-remaining {
+    font-size: 38px;
+}
+
+#question img {
+    width: 300px;
+    border: 10px solid #1972B5;
+    border-radius: 10px;
+}
+
+.start-over {
+    padding: 10px;
+    font-size: 24px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.start-over:hover {
+    border: 3px solid #1972B5;
+    background-color: #F6CDE0;
+}
+
+.answer-choice {
+    padding: 10px;
+    font-size: 24px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.answer-choice:hover {
+    border: 3px solid #1972B5;
+    background-color: #F6CDE0;
+}
+
+#question {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
