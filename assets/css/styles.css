@@ -1,0 +1,82 @@
+/********STYLES**********/
+body {
+	background-image: url('../images/bg.jpg');
+}
+h1, h2, h3, h4, h5 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	font-weight: bold;
+}
+p, li, a, form{
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+}
+/********EXTRA STYLES ON ELEMENTS*****/
+.navbar-header {
+	background-color: #4aaaa5;
+}
+.navbar-header .navbar-brand {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: bold;
+	font-size: 30px;
+	color: #fff;
+	padding: 40px;
+}
+.navbar {
+	background-color: #666666;
+	border-top: 6px solid #4aaaa5;
+}
+.navbar-right {
+	padding: 15px;
+}
+.navbar-right li {
+	border-right: 1px solid #dddddd;
+}
+.navbar-right li:last-child {
+	border-right: none;
+}
+.navbar p {
+	padding-top: 10px;
+}
+.content img {
+	height: 200px;
+	border: 3px solid #4aaaa5;
+	border-radius: 3px;
+	float: left;
+	margin: 0px 20px 20px 0px;
+}
+.email-success {
+	color: green;
+	font-size: 14px;
+}
+.email-error {
+	color: red;
+	font-size: 14px;
+}
+.media-links a{
+	padding-right: 20px;
+}
+.caption {
+	background-color: #4aaaa5;
+}
+.caption h3 {
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+}
+.footer p {
+	color: #fff;
+}
+.btn-submit {
+	background-color: #4aaaa5;
+	color: #fff;
+}
+.btn-submit:hover {
+	color: #D3D3D3;
+}
+
+@media(max-width: 768px) {
+	.navbar-right li {
+		display: inline-block;
+	}
+}
