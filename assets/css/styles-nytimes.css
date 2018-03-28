@@ -1,0 +1,43 @@
+.jumbotron {
+  background-color: navy;
+}
+.jumbotron h1 {
+  color: white;
+}
+.panel-heading {
+  background-color: navy;
+  color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.panel-heading {
+  padding: 20px;
+}
+.panel-body {
+  border: 1px solid navy;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 20px;
+}
+.results-panel {
+  margin-top: 40px;
+}
+.article {
+  background-color: #ECF0F1;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.number {
+  background-color: navy;
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  margin-right: 10px;
+  color: white;
+  border-radius: .25em;
+}
+small {
+  font-size: 50%;
+  opacity: .3;
+}

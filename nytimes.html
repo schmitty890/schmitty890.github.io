@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYTIMES ASSIGNMENT</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script> <!-- include font awesome library for icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <!-- include bootstrap library for bootstrap css -->
+   	<link href="assets/stylesheets/styles-nytimes.css" rel="stylesheet"> <!-- include our custom css -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4 text-center"><strong><i class="far fa-newspaper"></i> New York Times Search</strong></h1>
+        </div><!-- end jumbotron -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><i class="fas fa-filter"></i> Search Parameters</h3>
+            </div>
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <label for="searchTerm">Search Term:</label>
+                        <input type="Search" class="form-control" id="searchedTerm" placeholder="Search Term">
+                    </div>
+                    <div class="form-group">
+                        <label for="numberOfRecords">Number of Records to Retrieve:</label>
+                        <select class="form-control" id="numberOfEntries">
+                            <option>1</option>
+                            <option selected>5</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="startYear">Start Year (Optional - this needs to be entered in the format of YYYYMMDD as that is the format on the nytimes api this field needs to have, otherwise this wont work):</label>
+                        <input type="Search" class="form-control" id="begin-form" placeholder="YYYYMMDD">
+                    </div>
+                    <div class="form-group">
+                        <label for="endYear">End Year (Optional - this needs to be entered in the format of YYYYMMDD as that is the format on the nytimes api this field needs to have, otherwise this wont work):</label>
+                        <input type="Search" class="form-control" id="end-form" placeholder="YYYYMMDD">
+                    </div>
+                    <button type="submit" class="btn btn-primary submit"><i class="fas fa-search"></i> Search</button>
+                    <button type="submit" class="btn btn-primary clear"><i class="fas fa-trash-alt"></i> Clear Results</button>
+                </form><!-- end form -->
+            </div><!-- end form panel -->
+        </div><!-- end panel -->
+        <div class="panel panel-default results-panel">
+            <div class="panel-heading">
+                <h3 class="panel-title"><i class="fas fa-th-list"></i> Top Articles</h3>
+            </div><!-- end panel heading -->
+            <div class="panel-body">
+                  <div id="results">
+                  </div>
+            </div><!-- end form panel -->
+        </div><!-- end results-panel -->
+
+      <div class="row"> <!-- the footer div to show our love for coding -->
+        <div class="col-sm-12">
+          <hr>
+          <h5 class="text-center"><small>Made by Jason, Jeannie, Joselyn and Mitchell with lots and lots of <i class="fa fa-heart"></i></small></h5>
+        </div>
+      </div>
+    </div><!-- end container -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- add jquery -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> <!-- add bootstrap js -->
+    <script type="text/javascript" src="assets/js/app-nytimes.js"></script> <!-- add our custom javascript -->
+</body>
+</html>
