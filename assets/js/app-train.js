@@ -28,10 +28,10 @@ console.log('app.js');
     $(document).on('click', '#logout', function() {
         firebase.auth().signOut().then(function() {
           // Sign-out successful.
-          console.log('you are signed out');
-        }, function(error) {
+          console.log('sign out successful');
+        }).catch(function(error) {
           // An error happened.
-          console.log('there was an error with signing out');
+          console.log('sign out error');
         });
     });
 
