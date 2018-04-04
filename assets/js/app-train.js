@@ -25,6 +25,16 @@ console.log('app.js');
         });
     });
 
+    $(document).on('click', '#logout', function() {
+        firebase.auth().signOut().then(function() {
+          // Sign-out successful.
+          console.log('you are signed out');
+        }, function(error) {
+          // An error happened.
+          console.log('there was an error with signing out');
+        });
+    });
+
 
     var database = firebase.database();
 
