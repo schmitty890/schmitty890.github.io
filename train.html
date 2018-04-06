@@ -8,7 +8,7 @@
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script> <!-- include font awesome library for icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <!-- include bootstrap library for bootstrap css -->
-   	<link href="assets/css/styles-train.css" rel="stylesheet"> <!-- include our custom css -->
+    <link href="assets/css/styles-train.css" rel="stylesheet"> <!-- include our custom css -->
     <!-- include moment.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.js"></script>
     
@@ -28,8 +28,6 @@
                 </div>
             </div>
         </div><!-- end jumbotron -->
-        <button id="sign-in">sign in</button>
-        <button id="logout">logout</button>
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title"><i class="fas fa-train"></i> Current Train Schedule</h3>
@@ -52,43 +50,40 @@
                 </table>
             </div><!-- end form panel -->
 
-<!-- ////////////////////////////////////////////////////// -->
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Update Train</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form id="train-modal-form">
-            <div class="form-group">
-                <label for="searchTerm">Train Name</label>
-                <input type="Search" class="form-control" id="train-name-modal" placeholder="Train Name">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Train</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form id="train-modal-form">
+                    <div class="form-group">
+                        <label>Train Name</label>
+                        <input class="form-control" id="train-name-modal" placeholder="Train Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Destination</label>
+                        <input class="form-control" id="destination-modal" placeholder="Destination">
+                    </div>
+                    <div class="form-group">
+                        <label>Train Time (HH:mm - Military Time)</label>
+                        <input type="Search" class="form-control" id="train-time-modal" placeholder="18:00">
+                    </div>
+                    <div class="form-group">
+                        <label>Frequency (min)</label>
+                        <input class="form-control" id="frequency-modal" placeholder="Frequency in minutes">
+                    </div>
+                    <button id="submit-modal" class="btn btn-primary"><i class="far fa-plus-square"></i> Update Train</button>
+                </form>
+              </div>
             </div>
-            <div class="form-group">
-                <label for="numberOfRecords">Destination</label>
-                <input type="Search" class="form-control" id="destination-modal" placeholder="Destination">
-            </div>
-            <div class="form-group">
-                <label for="startYear">Train Time (HH:mm - Military Time)</label>
-                <input type="Search" class="form-control" id="train-time-modal" placeholder="18:00">
-            </div>
-            <div class="form-group">
-                <label for="endYear">Frequency (min)</label>
-                <input type="Search" class="form-control" id="frequency-modal" placeholder="Frequency in minutes">
-            </div>
-            <button type="submit" id="submit-modal" class="btn btn-primary"><i class="far fa-plus-square"></i> Update Train</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ////////////////////////////////////////////////////// -->
+          </div>
+        </div> <!-- end modal -->
 
         </div><!-- end panel -->
         <div class="panel panel-default results-panel">
@@ -102,18 +97,18 @@
                         <input type="Search" class="form-control" id="train-name" placeholder="Train Name">
                     </div>
                     <div class="form-group">
-                        <label for="numberOfRecords">Destination</label>
+                        <label>Destination</label>
                         <input type="Search" class="form-control" id="destination" placeholder="Destination">
                     </div>
                     <div class="form-group">
-                        <label for="startYear">Train Time (HH:mm - Military Time)</label>
+                        <label>Train Time (HH:mm - Military Time)</label>
                         <input type="Search" class="form-control" id="train-time" placeholder="18:00">
                     </div>
                     <div class="form-group">
-                        <label for="endYear">Frequency (min)</label>
-                        <input type="Search" class="form-control" id="frequency" placeholder="Frequency in minutes">
+                        <label>Frequency (min)</label>
+                        <input class="form-control" id="frequency" placeholder="Frequency in minutes">
                     </div>
-                    <button type="submit" id="submit" class="btn btn-primary"><i class="far fa-plus-square"></i> Add Train</button>
+                    <button id="submit" class="btn btn-primary"><i class="far fa-plus-square"></i> Add Train</button>
                 </form><!-- end form -->
             </div><!-- end form panel -->
         </div><!-- end results-panel -->
