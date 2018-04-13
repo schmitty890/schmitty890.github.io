@@ -48,8 +48,8 @@ $(function(){
     function searchOpenWeatherAPI () {
               
         //Variables to for URLs that use the API keys, there's one for daily weather and another for five day forecast for every three hours
-        var queryURLforecast = 'http://api.openweathermap.org/data/2.5/forecast?zip=' + zipcodeWeather + '&q=' + cityWeather+ '&appid=' + APIKey; 
-        var queryURLweather = 'http://api.openweathermap.org/data/2.5/weather?zip=' + zipcodeWeather + '&q=' + cityWeather+ '&appid=' + APIKey;     
+        var queryURLforecast = 'https://api.openweathermap.org/data/2.5/forecast?zip=' + zipcodeWeather + '&q=' + cityWeather+ '&appid=' + APIKey; 
+        var queryURLweather = 'https://api.openweathermap.org/data/2.5/weather?zip=' + zipcodeWeather + '&q=' + cityWeather+ '&appid=' + APIKey;     
 
         $.ajax({
             type: "GET",
