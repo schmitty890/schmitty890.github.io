@@ -88,9 +88,9 @@ var TicketMasterEvent = function() {
                               <h6>${eventName}</h6>
                               <h4>Venue: ${venueName}</h4>
                               <h6>${eventDate}</h6>
-                              <button type="button" class="btn btn-venue-details" data-toggle="modal" data-target="#myModal">Venue Details</button>
-                              <button type="button" class="btn btn-event-details" data-toggle="modal" data-target="#myModal">Event Details</button>
-                              <button class="btn btn-save-event">Save Event</button>
+                              <button type="button" class="btn btn-venue-details" data-toggle="modal" data-target="#myModal"><i class="fas fa-building"></i> Venue Details</button>
+                              <button type="button" class="btn btn-event-details" data-toggle="modal" data-target="#myModal"><i class="fas fa-calendar-alt"></i> Event Details</button>
+                              <button class="btn btn-save-event"><i class="far fa-heart"></i> Save Event</button>
                             </div>
                             <div class="col-md-3 float-left text-center weather-widget">
                               <span style="font-size:50px;"><i class="wi wi-horizon-alt"></i></span><br>
