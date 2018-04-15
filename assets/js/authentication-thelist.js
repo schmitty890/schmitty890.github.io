@@ -28,6 +28,14 @@ $(document).on('click', '#log-in', function() {
     }
     console.log(error);
   });
+
+  var user = firebase.auth().currentUser;
+
+  if (user) {
+    console.log('User is signed in.');
+  } else {
+    console.log('No user is signed in.');
+  }
 });
 
 $(document).on('click', '#log-out', function() {
